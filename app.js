@@ -31,9 +31,10 @@ app.get('/api/whoami', (req, res) => {
     const agent = req.get('user-agent');
 
     // responde back to the request with a json object, including the above informations
-    res.json({
-        "ipaddress": ip,
-        "language": language,
-        "software": agent
-    })
+    // res.json({
+    //     "ipaddress": ip,
+    //     "language": language,
+    //     "software": agent
+    // })
+    res.render('index', {ip: ip, language: language, software: agent})
 })
