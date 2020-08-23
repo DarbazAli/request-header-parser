@@ -21,7 +21,7 @@ app.get('/about', (req, res) => {
 })
 
 // setup api router
-app.get('/api/whoami', (req, res) => {
+app.get('/api', (req, res) => {
 
     // get request ip address
     const ip = req.ip;
@@ -36,5 +36,5 @@ app.get('/api/whoami', (req, res) => {
     //     "language": language,
     //     "software": agent
     // })
-    res.render('index', {ip: ip, language: language, software: agent})
+    res.render('index', {title: "API", ip: ip, language: language, software: agent})
 })

@@ -61,5 +61,17 @@ section {
     /* height: 375px; */
     border-radius: 10px;
     background: #f5f5f5;
-    padding: 30px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 22px;
+    font-size: 20px;
+    border-radius: 5px;
+    background: #2d82d6;
+    box-shadow: 0px 6px 12px rgba(128, 135, 142, 0.32);
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
 }
