@@ -20,3 +20,20 @@ app.get('/about', (req, res) => {
     res.render('about')
 })
 
+// setup api router
+app.get('/api/whoami', (req, res) => {
+
+    // get request ip address
+    const ip = req.ip;
+    // get request Accept-Language
+    const language = req.get('accept-language');
+    // get user agent information or softare
+    const agent = req.get('user-agent');
+
+    // responde back to the request with a json object, including the above informations
+    res.json({
+        "ipaddress": ip,
+        "language": language,
+        "software": agent
+    })
+})
