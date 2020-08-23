@@ -81,3 +81,9 @@ section {
     text-decoration: none;
     margin-bottom: 20px;
 }
+
+@media ( max-width: 860px) {
+    section {
+        flex-direction: column;
+    }
+}
